@@ -9,39 +9,21 @@
         <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
         <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
         <router-link to="#"><h5 style="font-size: 15px; font-weight: 300;">Forgot password?</h5></router-link>
-        <v-btn @click="submit" class="submit-btn">submit</v-btn>
+        <router-link to="/Profile"><v-btn class="submit-btn">submit</v-btn></router-link>
       </v-form>
     </v-container>
   </v-container>
 </template>
 
 <script>
-  import Parse from "parse";
   export default {
     name: 'LogIn',
     data() {
       return {
-        email: null,
-        password: null
       }
     },
     methods: {
-      loginUser() {
-        Parse.User.logIn(this.email, this.password).then((user) => {
-          console.log(user);
-          console.log(user)
-          if (user.get("isAdmin") == true) {
-            this.$router.push("/Appointment");
-          } else {
-            Parse.User.logOut().then(() => {
-              var currentUser = Parse.User.current();
-              alert("This user is not an admin.");
-            });
-          }
-        }).catch(error => {
-          console.error(error);
-        })
-      }
+      
     }
   }
 </script>

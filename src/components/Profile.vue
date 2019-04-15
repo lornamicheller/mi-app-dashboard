@@ -7,7 +7,7 @@
             <img src="../assets/logomiappgris.svg" alt="avatar">
           </v-avatar>
         </v-container>
-        <v-list-tile @click="">
+        <v-list-tile>
           <v-list-tile-action>
             <v-icon class="icon">calendar_today</v-icon>
           </v-list-tile-action>
@@ -17,7 +17,7 @@
             </router-link>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="">
+        <v-list-tile>
           <v-list-tile-action>
             <v-icon class="icon">view_list</v-icon>
           </v-list-tile-action>
@@ -27,7 +27,7 @@
           </v-list-tile-content>
           </router-link>
         </v-list-tile>
-        <v-list-tile @click="">
+        <v-list-tile>
           <v-list-tile-action>
             <v-icon class="icon">person</v-icon>
           </v-list-tile-action>
@@ -39,7 +39,7 @@
         </v-list-tile>
   
         
-        <v-list-tile @click="" class="hidden-sm-and-up">
+        <v-list-tile class="hidden-sm-and-up">
           <v-list-tile-action>
             <v-icon class="icon">lock_open</v-icon>
           </v-list-tile-action>
@@ -47,7 +47,7 @@
             <v-list-tile-title>Login</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="" class="hidden-sm-and-up">
+        <v-list-tile class="hidden-sm-and-up">
           <v-list-tile-action>
             <v-icon class="icon">lock</v-icon>
           </v-list-tile-action>
